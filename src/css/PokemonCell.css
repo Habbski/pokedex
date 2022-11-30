@@ -4,9 +4,15 @@
     border-radius: 8px;
     background-color: white;
     background-repeat: no-repeat;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .16);
+    box-shadow: 0 6px rgb(131, 131, 131);
+    cursor: pointer;
 }
 
 .pokemon-cell:hover {
     background-color: rgb(213, 213, 213);
+}
+
+.pokemon-cell:active {
+    transform: translateY(4px);
+    box-shadow: 0 3px rgb(85, 85, 85);
 }

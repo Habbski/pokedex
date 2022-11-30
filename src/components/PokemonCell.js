@@ -1,6 +1,9 @@
 import "../css/PokemonCell.css";
 
 function PokemonCell({pokeclass}) {
+
+  
+
   return (
     <button className="pokemon-cell">
       <img
