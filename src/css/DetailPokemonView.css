@@ -1,0 +1,17 @@
+.detail-pokemon-view {
+    color: white;
+
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    background-color: rgb(188, 244, 240);
+    border-radius: 5px;
+}
+
+.image {
+    max-width: 100%;
+}

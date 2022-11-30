@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import PokemonCell from "./PokemonCell";
 
-function PokemonList() {
+function PokemonList({setPokemonDetail}) {
   const [pokemon, setPokemon] = useState([]);
 
   useEffect(() => {
@@ -33,8 +33,10 @@ function PokemonList() {
 
   return (
     <div className="pokemon-list">
-      {pokemon.map((pokeclass, id) => {
-        return <PokemonCell key={id} pokeclass={id} />;
+      {pokemon.map((pokemon, id) => {
+        return (
+          <PokemonCell key={id} pokemon={id} setPokemonDetail={setPokemonDetail} />
+        );
       })}
     </div>
   );
