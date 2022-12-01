@@ -19,11 +19,7 @@ function DetailPokemonView({ pokemonDetail }) {
       </div>
       <div>
         <div>
-          {pokemonDetail.name ? (
-            <h3>{firstCharBig(pokemonDetail.name)}</h3>
-          ) : (
-            <h4>Metapod</h4>
-          )}
+            <h3>{pokemonDetail.name ? firstCharBig(pokemonDetail.name) : "Metapod"}</h3>
         </div>
         <div className="info-container">
           <p className="info-text">
