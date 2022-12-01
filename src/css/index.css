@@ -1,4 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(187, 235, 138);
+}
+
+.main-font-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

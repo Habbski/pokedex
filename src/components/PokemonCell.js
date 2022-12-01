@@ -2,7 +2,6 @@ import "../css/PokemonCell.css";
 import axios from "axios";
 
 function PokemonCell({ pokemon, setPokemonDetail }) {
-
   const handleBtnClick = () => {
     const url = `https://pokeapi.co/api/v2/pokemon/${pokemon + 1}/`;
 
@@ -11,7 +10,13 @@ function PokemonCell({ pokemon, setPokemonDetail }) {
       .then((response) => {
         setPokemonDetail(response.data);
       })
-      .catch((error) => {});
+      .catch((error) => {
+        if (error.response) {
+          console.log(error.response.data);
+          console.log(error.response.status);
+          console.log(error.response.headers);
+        }
+      });
   };
 
   return (
