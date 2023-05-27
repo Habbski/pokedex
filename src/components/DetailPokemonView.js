@@ -21,7 +21,7 @@ function DetailPokemonView({ pokemonDetail }) {
         <div>
             <h3>{pokemonDetail.name ? firstCharBig(pokemonDetail.name) : "Metapod"}</h3>
         </div>
-        <div className="info-container">
+        <div className="info-container ability-type-container">
           <p className="info-text">
             Type:
             {pokemonDetail.types ? (
@@ -43,7 +43,7 @@ function DetailPokemonView({ pokemonDetail }) {
             Weight: {pokemonDetail.weight ? pokemonDetail.weight / 10 : 9.9} kg
           </p>
         </div>
-        <div className="info-container">
+        <div className="info-container ability-type-container">
           <p className="info-text">
             Abilities:
             {pokemonDetail.abilities ? (
