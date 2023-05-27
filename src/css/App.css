@@ -1,13 +1,22 @@
 .App {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: rgb(241, 4, 67);
+  border-radius: 8px;
+  font-family: sans-serif;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  .App {
+    flex-direction: row;
     height: 800px;
-    padding-left: 10px;
-    margin: 50px auto;
-    background-color: rgb(241, 4, 67);
-    border-radius: 8px;
-    font-family: sans-serif;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.50);
+  }
 }

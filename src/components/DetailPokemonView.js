@@ -15,6 +15,7 @@ function DetailPokemonView({ pokemonDetail }) {
               ? pokemonDetail.sprites.front_default
               : "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"
           }
+          alt="Pokemon detail"
         ></img>
       </div>
       <div>
