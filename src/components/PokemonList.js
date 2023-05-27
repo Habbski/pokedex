@@ -32,7 +32,7 @@ function PokemonList({setPokemonDetail}) {
   }, []);
 
   return (
-    <div className="pokemon-list">
+    <div className="pokemon-list scroll-container">
       {pokemon.map((pokemon, id) => {
         return (
           <PokemonCell key={id} pokemon={id} setPokemonDetail={setPokemonDetail} />
